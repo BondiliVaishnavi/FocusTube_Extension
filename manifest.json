@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "FocusTube ML",
   "version": "1.0",
-  "description": "Hide non‑educational YouTube videos using ML. Keep your focus on learning with smart video filtering.",
+  "description": "Hide non-educational YouTube videos using a hybrid ML + keyword filtering system. Stay focused on learning.",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
@@ -41,6 +41,6 @@
     "service_worker": "background.js"
   },
   "author": "Bondili Vaishnavi",
-  "homepage_url": "https://github.com/yourusername/focustube-ml",
+  "homepage_url": "https://github.com/BondiliVaishnavi/FocusTube_Extension",
   "short_name": "FocusTube"
 }
