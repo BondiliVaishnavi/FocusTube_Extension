@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FocusTube ML</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Enhanced Header -->
+    <div class="header">
+      <span class="icon">🎯</span>
+      <span class="title">FocusTube ML</span>
+      <span class="version">v1.0</span>
+    </div>
+
+    <!-- Enhanced Toggle -->
+    <div class="toggle-section">
+      <span class="toggle-label">Focus Mode</span>
+      <label class="switch">
+        <input type="checkbox" id="toggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <!-- Enhanced Status -->
+    <div class="status">
+      <span class="dot active" id="statusDot"></span>
+      <span id="statusText">Filter Active</span>
+      <span class="status-time" id="updateTime"></span>
+    </div>
+
+    <!-- Enhanced Dashboard Link -->
+    <a href="#" class="dashboard-link" id="openDashboard">
+      <span>View Detailed Analytics</span>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "FocusTube ML",
+  "version": "1.0",
+  "description": "Hide non‑educational YouTube videos using ML. Keep your focus on learning with smart video filtering.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": [
+        "lib/word_weights.js",
+        "lib/ml_model.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FocusTube ML - Filter YouTube videos",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "author": "Bondili Vaishnavi",
+  "homepage_url": "https://github.com/yourusername/focustube-ml",
+  "short_name": "FocusTube"
+}
